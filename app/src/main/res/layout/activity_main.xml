@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/tvQuote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:padding="20dp"
+        android:hint="Kata-kata hari ini chef..."
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/tvAuthor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="#888888"
+        android:visibility="gone"
+        android:padding="10dp"/>
+
+    <Button
+        android:id="@+id/btnGetQuote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ambil Quote" />
+
+    <Button
+        android:id="@+id/btnSaveFav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Simpan ke Favorite" />
+
+    <Button
+        android:id="@+id/btnShowFav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lihat Favorite" />
+
+    <ListView
+        android:id="@+id/listViewFav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+</LinearLayout>
